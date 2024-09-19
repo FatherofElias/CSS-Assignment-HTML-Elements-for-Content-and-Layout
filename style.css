@@ -74,7 +74,7 @@ nav ul li a:hover {
 }
 
 .gallery-item:hover {
-    border-color: var(--gallery-border-color);
+    border-color: transparent;
     transform: scale(1.05);
 }
 
