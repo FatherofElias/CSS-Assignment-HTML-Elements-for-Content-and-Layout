@@ -1,0 +1,39 @@
+:root {
+    --font-family: Arial, sans-serif;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --nav-background-color: #333;
+    --nav-text-color: #fff;
+    --hover-text-color: #333;
+    --hover-background-color: #fff;
+    --transition-duration: 0.3s;
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+nav {
+    background-color: var(--nav-background-color);
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    padding: 5px 10px;
+    transition: color var(--transition-duration), background-color var(--transition-duration);
+}
+nav ul li a:hover {
+    color: var(--hover-text-color);
+    background-color: var(--hover-background-color);
+    border-radius: 5px;
+}
