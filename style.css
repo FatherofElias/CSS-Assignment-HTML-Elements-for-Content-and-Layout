@@ -15,6 +15,8 @@
     --cta-text-color: #fff;
     --cta-hover-background-color: #0056b3;
     --cta-hover-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --input-border-color: #ccc;
+    --input-focus-border-color: #007BFF;
 }
 
 body {
@@ -67,6 +69,7 @@ nav ul li a:hover {
     position: relative;
     overflow: hidden;
     border: 2px solid transparent;
+    border-radius: 20px;
     transition: border-color var(--transition-duration), transform var(--transition-duration);
 }
 
@@ -108,4 +111,38 @@ figcaption {
     background-color: var(--cta-hover-background-color);
     box-shadow: var(--cta-hover-box-shadow);
     transform: scale(1.05);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    transition: border-color var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: var(--input-focus-border-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
 }
