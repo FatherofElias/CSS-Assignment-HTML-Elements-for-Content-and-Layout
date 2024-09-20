@@ -11,6 +11,10 @@
     --hover-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     --hover-transform: scale(1.1);
     --gallery-border-color: #007BFF;
+    --cta-background-color: #007BFF;
+    --cta-text-color: #fff;
+    --cta-hover-background-color: #0056b3;
+    --cta-hover-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -53,7 +57,7 @@ nav ul li a:hover {
 
 #gallery {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     margin: 20px 0;
@@ -63,7 +67,6 @@ nav ul li a:hover {
     position: relative;
     overflow: hidden;
     border: 2px solid transparent;
-    border-radius: 20px;
     transition: border-color var(--transition-duration), transform var(--transition-duration);
 }
 
@@ -87,4 +90,22 @@ figcaption {
     font-style: italic;
     color: var(--text-color);
     text-align: center;
+}
+
+.cta-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: var(--cta-background-color);
+    color: var(--cta-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--transition-duration), box-shadow var(--transition-duration), transform var(--transition-duration);
+}
+
+.cta-button:hover {
+    background-color: var(--cta-hover-background-color);
+    box-shadow: var(--cta-hover-box-shadow);
+    transform: scale(1.05);
 }
