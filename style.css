@@ -2,21 +2,14 @@
     --font-family: Arial, sans-serif;
     --background-color: #f0f0f0;
     --text-color: #333;
-    --nav-background-color: #333;
-    --nav-text-color: #fff;
-    --hover-text-color: #333;
-    --hover-background-color: #fff;
+    --primary-color: #007BFF;
+    --secondary-color: #fff;
+    --hover-color: #0056b3;
     --transition-duration: 0.3s;
-    --hover-font-weight: bold;
     --hover-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     --hover-transform: scale(1.1);
-    --gallery-border-color: #007BFF;
-    --cta-background-color: #007BFF;
-    --cta-text-color: #fff;
-    --cta-hover-background-color: #0056b3;
-    --cta-hover-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     --input-border-color: #ccc;
-    --input-focus-border-color: #007BFF;
+    --input-focus-border-color: var(--primary-color);
 }
 
 body {
@@ -26,7 +19,7 @@ body {
 }
 
 nav {
-    background-color: var(--nav-background-color);
+    background-color: var(--text-color);
     padding: 10px;
 }
 
@@ -43,29 +36,28 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--nav-text-color);
+    color: var(--secondary-color);
     padding: 5px 10px;
     transition: color var(--transition-duration), background-color var(--transition-duration), font-weight var(--transition-duration), box-shadow var(--transition-duration), transform var(--transition-duration);
 }
 
 nav ul li a:hover {
-    color: var(--hover-text-color);
-    background-color: var(--hover-background-color);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
     border-radius: 5px;
-    font-weight: var(--hover-font-weight);
+    font-weight: bold;
     box-shadow: var(--hover-box-shadow);
     transform: var(--hover-transform);
 }
 
 #gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
     margin: 20px 0;
+    text-align: center;
 }
 
 .gallery-item {
+    display: inline-block;
+    margin: 10px;
     position: relative;
     overflow: hidden;
     border: 2px solid transparent;
@@ -99,8 +91,8 @@ figcaption {
     display: block;
     margin: 10px auto;
     padding: 10px 20px;
-    background-color: var(--cta-background-color);
-    color: var(--cta-text-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -108,8 +100,8 @@ figcaption {
 }
 
 .cta-button:hover {
-    background-color: var(--cta-hover-background-color);
-    box-shadow: var(--cta-hover-box-shadow);
+    background-color: var(--hover-color);
+    box-shadow: var(--hover-box-shadow);
     transform: scale(1.05);
 }
 
@@ -117,7 +109,7 @@ form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
