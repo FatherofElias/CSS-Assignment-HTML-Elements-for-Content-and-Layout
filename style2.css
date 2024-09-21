@@ -8,10 +8,10 @@
     --input-padding: 10px;
     --border-radius: 4px;
     --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    --table-header-bg: #4CAF50;
-    --table-header-color: white;
-    --table-row-bg: lightgray;
-    --table-row-hover-bg: slategray;
+    --header-bg-color: #4CAF50;
+    --header-text-color: white;
+    --row-bg-color: lightgray;
+    --row-hover-bg-color: darkslategray;
 }
 
 body {
@@ -24,17 +24,17 @@ body {
 nav {
     background-color: #333;
     padding: 10px 0;
+    text-align: center;
 }
 
 .nav-menu {
     list-style: none;
-    display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 .nav-menu li {
+    display: inline;
     margin: 0 15px;
 }
 
@@ -110,8 +110,8 @@ button:hover {
 }
 
 .styled-table thead tr {
-    background-color: var(--table-header-bg);
-    color: var(--table-header-color);
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
     text-align: left;
 }
 
@@ -126,11 +126,11 @@ button:hover {
 }
 
 .styled-table tbody tr:nth-of-type(even) {
-    background-color: var(--table-row-bg);
+    background-color: var(--row-bg-color);
 }
 
 .styled-table tbody tr:hover {
-    background-color: var(--table-row-hover-bg);
+    background-color: var(--row-hover-bg-color);
 }
 
 .styled-table tbody tr:last-of-type {
