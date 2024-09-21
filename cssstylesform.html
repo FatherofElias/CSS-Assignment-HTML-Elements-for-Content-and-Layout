@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!--ASSIGNMENT 2-->
+
+    <!--Task 1-->
+    <div class="form-container">
+        <h2>Register</h2>
+        <form action="/submit_registration" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!--Task 2-->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!--Task 3-->
+    <div class="table-container">
+        <h2>Product List</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Product 1</td>
+                    <td>Category A</td>
+                    <td>$10.00</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td>Product 2</td>
+                    <td>Category B</td>
+                    <td>$15.00</td>
+                    <td>Out of Stock</td>
+                </tr>
+                <tr>
+                    <td>Product 3</td>
+                    <td>Category A</td>
+                    <td>$20.00</td>
+                    <td>In Stock</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
